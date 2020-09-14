@@ -8,6 +8,7 @@ fields:
   template_types:
   - test
   - short-biography-section
+  - book-carousel-section
   config:
     min: 
     max: 
