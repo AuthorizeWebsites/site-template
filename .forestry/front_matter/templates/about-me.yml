@@ -8,3 +8,5 @@ fields:
     required: false
   label: Header
   default: About Me
+pages:
+- forestry/pages/about-me.json
