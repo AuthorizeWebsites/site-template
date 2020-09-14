@@ -8,8 +8,9 @@ fields:
   config:
     required: true
   label: Name
-  default: The Lord of the Rings
-- name: tagline_and_description
+  default: ''
+  description: E.g. The Lord of the Rings, Harry Potter, The Foundation Trilogy, etc.
+- name: taglineAndDescription
   type: include
   config: {}
   template: tagline-description
@@ -18,9 +19,11 @@ fields:
   type: list
   config:
     use_select: true
-    min: 
+    min: 1
     max: 
     source:
       type: pages
       section: books
   label: Books
+  description: Create your books via the books collection. Then add them to your series,
+    here.
