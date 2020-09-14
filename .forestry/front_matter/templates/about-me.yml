@@ -1,0 +1,10 @@
+---
+label: About Me
+hide_body: true
+fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+  default: About Me
