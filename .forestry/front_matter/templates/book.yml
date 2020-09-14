@@ -3,7 +3,7 @@ label: Book
 hide_body: true
 display_field: title
 fields:
-- name: cover_s_
+- name: covers
   type: image_gallery
   config: {}
   label: Cover(s)
@@ -17,12 +17,12 @@ fields:
   label: Title
   description: E.g. War and Peace, The Iliad, The Cat in the Hat, etc.
   default: ''
-- name: author_s_
+- name: authors
   type: tag_list
   default: []
   label: Author(s)
   description: E.g. John Grisham, J.K. Rowling, J.R.R. Tolkien, etc.
-- name: tagline_and_description
+- name: taglineAndDescription
   type: include
   config: {}
   template: tagline-description
