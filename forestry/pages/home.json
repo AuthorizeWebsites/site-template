@@ -1,5 +1,25 @@
 {
   "header": "",
   "headshot": "",
-  "your_life_story": ""
+  "your_life_story": "",
+  "sections": [
+    {
+      "template": "test",
+      "primary_text": "John Grisham",
+      "secondary_text": "America's Favorite Storyteller",
+      "background": ""
+    },
+    {
+      "template": "test",
+      "primary_text": "John Grisham",
+      "secondary_text": "America's Favorite Storyteller",
+      "background": ""
+    },
+    {
+      "template": "test",
+      "primary_text": "John Grisham",
+      "secondary_text": "America's Favorite Storyteller",
+      "background": ""
+    }
+  ]
 }
