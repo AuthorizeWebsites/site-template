@@ -6,7 +6,7 @@ fields:
 - name: name
   type: text
   config:
-    required: true
+    required: false
   label: Name
   default: ''
   description: E.g. The Lord of the Rings, Harry Potter, The Foundation Trilogy, etc.
