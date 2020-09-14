@@ -1,9 +1,0 @@
----
-label: Test
-hide_body: true
-fields:
-- name: test
-  type: text
-  config:
-    required: false
-  label: test
