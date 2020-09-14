@@ -37,3 +37,7 @@ fields:
   config:
     maxSize: 64
   label: Cover
+- name: author_s_
+  type: tag_list
+  default: []
+  label: Author(s)
