@@ -3,11 +3,6 @@ label: Book
 hide_body: true
 display_field: title
 fields:
-- name: cover
-  type: file
-  config:
-    maxSize: 64
-  label: Cover
 - name: title
   type: text
   config:
@@ -24,3 +19,10 @@ fields:
   config: {}
   template: tagline-description
   label: Tagline & Description
+- name: cover_s_
+  type: image_gallery
+  config: {}
+  label: Cover(s)
+  description: 'Upload as many (or as few) versions as you want. I''ll display the
+    best one for the device being used at any given time. Supported file extensions:
+    png, jpeg, jpg, webp, avif, gif, PNG, JPEG, JPG, WEBP, AVIF, and GIF'
