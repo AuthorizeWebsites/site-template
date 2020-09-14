@@ -3,6 +3,11 @@ label: Book
 hide_body: true
 display_field: title
 fields:
+- name: cover
+  type: file
+  config:
+    maxSize: 64
+  label: Cover
 - name: title
   type: text
   config:
@@ -10,36 +15,14 @@ fields:
   label: Title
   description: E.g. War and Peace, The Iliad, The Cat in the Hat, etc.
   default: The Fellowship of the Ring
-- name: tagline
-  type: text
-  config:
-    required: false
-  label: Tagline
-  default: One ring to rule them all.
-- name: description
-  type: textarea
-  default: <p><em>The Fellowship of the Ring</em> is the first of three volumes of
-    the epic novel <em>The Lord of the Rings</em> by the English author J. R. R. Tolkien.
-    It is followed by <em>The Two Towers</em> and <em>The Return of the King</em>.
-    It takes place in the fictional universe of Middle-earth. It was originally published
-    on 29 July 1954 in the United Kingdom.</p><p>The volume consists of a foreword,
-    in which the author discusses his writing of <em>The Lord of the Rings</em>, a
-    prologue titled "Concerning Hobbits, and other matters", and the main narrative
-    in Book I and Book II.</p>
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: html-blocks
-  label: Description
-- name: cover
-  type: file
-  config:
-    maxSize: 64
-  label: Cover
 - name: author_s_
   type: tag_list
   default: []
   label: Author(s)
+- name: tagline_and_description
+  type: include
+  config: {}
+  template: tagline-description
+  label: Tagline & Description
 pages:
 - forestry/collections/books/the-fellowship-of-the-ring.json
