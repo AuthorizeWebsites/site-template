@@ -1,4 +1,17 @@
 ---
 label: Newsletter Sign-up Section
 hide_body: true
-fields: []
+fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+  default: Sign-up for my newsletter!
+- name: customization
+  type: field_group
+  config: {}
+  label: Customization
+  description: This section will show, but <strong>submissions won't do anything</strong>
+    unless you've configured your service in the Newsletter Service section found
+    on your sidebar under Integrations.
