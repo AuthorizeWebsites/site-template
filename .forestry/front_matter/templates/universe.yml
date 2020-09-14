@@ -12,3 +12,15 @@ fields:
       type: pages
       section: series
   label: Series
+- name: stand-alone
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: books
+  label: Stand-alone Books
+  description: Any book that's part of the universe, but isn't part of any of the
+    a series in the universe should go here.
