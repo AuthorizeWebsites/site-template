@@ -6,11 +6,11 @@ fields:
 - name: name
   type: text
   config:
-    required: true
+    required: false
   label: Name
-  description: E.g. Middle-earth, The Cosmere, Harry Potter's Wizarding World, etc.
-  default: Middle Earth
-- name: tagline_and_description
+  description: E.g. Middle-earth, The Cosmere, The Wizarding World, The Expanse, etc.
+  default: ''
+- name: taglineAndDescription
   type: include
   config: {}
   template: tagline-description
