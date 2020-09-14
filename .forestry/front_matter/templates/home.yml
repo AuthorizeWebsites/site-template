@@ -9,6 +9,7 @@ fields:
   - test
   - short-biography-section
   - book-carousel-section
+  - newsletter-sign-up-section
   config:
     min: 
     max: 
