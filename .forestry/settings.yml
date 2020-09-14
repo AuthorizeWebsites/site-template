@@ -1,54 +1,54 @@
 ---
 new_page_extension: html
 auto_deploy: false
-admin_path: "/public/admin"
-webhook_url: 
+admin_path: "/admin"
+webhook_url:
 sections:
-- type: heading
-  label: Integrations
-- type: document
-  path: forestry/integrations/newsletter-service.json
-  label: Newsletter Service
-- type: document
-  path: forestry/integrations/affiliate-codes-service.json
-  label: Affiliate Codes Service
-- type: heading
-  label: One-off Pages
-- type: document
-  path: forestry/pages/home.json
-  label: Home
-- type: document
-  path: forestry/pages/about-me.json
-  label: About Me
-- type: heading
-  label: Collections
-- type: directory
-  path: forestry/collections/books
-  label: Books
-  create: documents
-  match: "*.json"
-  new_doc_ext: json
-  templates:
-  - book
-- type: directory
-  path: forestry/collections/series
-  label: Series
-  create: documents
-  match: "*.json"
-  new_doc_ext: json
-  templates:
-  - series
-- type: directory
-  path: forestry/collections/universes
-  label: Universes
-  create: documents
-  match: "*.json"
-  new_doc_ext: json
-  templates:
-  - universe
+  - type: heading
+    label: Integrations
+  - type: document
+    path: forestry/integrations/newsletter-service.json
+    label: Newsletter Service
+  - type: document
+    path: forestry/integrations/affiliate-codes-service.json
+    label: Affiliate Codes Service
+  - type: heading
+    label: One-off Pages
+  - type: document
+    path: forestry/pages/home.json
+    label: Home
+  - type: document
+    path: forestry/pages/about-me.json
+    label: About Me
+  - type: heading
+    label: Collections
+  - type: directory
+    path: forestry/collections/books
+    label: Books
+    create: documents
+    match: "*.json"
+    new_doc_ext: json
+    templates:
+      - book
+  - type: directory
+    path: forestry/collections/series
+    label: Series
+    create: documents
+    match: "*.json"
+    new_doc_ext: json
+    templates:
+      - series
+  - type: directory
+    path: forestry/collections/universes
+    label: Universes
+    create: documents
+    match: "*.json"
+    new_doc_ext: json
+    templates:
+      - universe
 upload_dir: public/forestry
 public_path: "/forestry"
-front_matter_path: ''
+front_matter_path: ""
 use_front_matter_path: false
 file_template: ":filename:"
 build:
