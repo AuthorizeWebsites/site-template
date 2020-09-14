@@ -32,7 +32,3 @@ fields:
     max: 
     labelField: 
   label: Affiliate Service
-  description: These are all the supported affiliate services. If you use a service
-    that's not on this list, contact Authorize support (<a href="mailto:support@authorizewebsites.com"
-    title="" target="_blank">support@authorizewebsites.com</a>) and we'll add support
-    for it.
