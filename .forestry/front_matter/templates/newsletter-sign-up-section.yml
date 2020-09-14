@@ -2,15 +2,22 @@
 label: Newsletter Sign-up Section
 hide_body: true
 fields:
-- name: header
-  type: text
-  config:
-    required: false
-  label: Header
-  default: Sign-up for my newsletter!
 - name: customization
   type: field_group
   config: {}
+  fields:
+  - name: header
+    type: text
+    config:
+      required: false
+    label: Header
+    default: Sign-up for my newsletter!
+  - name: secondaryText
+    type: text
+    config:
+      required: false
+    label: Secondary Text
+    default: I'll keep you updated on what I'm up to, but I promise not to spam!
   label: Customization
   description: This section will show, but <strong>submissions won't do anything</strong>
     unless you've configured your service in the Newsletter Service section found
