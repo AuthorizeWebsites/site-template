@@ -1,1 +1,6 @@
-{}
+{
+  "service": "Mailchimp",
+  "mailchimpConfig": {
+    "API_KEY": ""
+  }
+}

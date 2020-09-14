@@ -36,3 +36,5 @@ fields:
   showOnly:
     field: service
     value: Mailchimp
+pages:
+- forestry/integrations/newsletter-service.json
