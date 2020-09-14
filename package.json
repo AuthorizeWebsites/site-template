@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "forestry-preview": "next -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
