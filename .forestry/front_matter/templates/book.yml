@@ -41,3 +41,5 @@ fields:
   type: tag_list
   default: []
   label: Author(s)
+pages:
+- forestry/collections/books/the-fellowship-of-the-ring.json
