@@ -32,6 +32,16 @@ fields:
     label: API Key
     description: Details on how to generate a Mailchimp API key can be found <a href="https://mailchimp.com/help/about-api-keys/"
       title="" target="_blank">here</a>.
+  - name: audienceId
+    type: text
+    config:
+      required: true
+      min: 10
+      max: 10
+    label: Audience ID
+    description: This is the identifier of the audience visitors who sign-up for your
+      newsletter will be added to. You can find out where to get an existing audience's
+      ID, <a href="https://mailchimp.com/help/find-audience-id/" title="" target="_blank">here</a>.
   label: Mailchimp Config
   showOnly:
     field: service
