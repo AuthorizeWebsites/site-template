@@ -69,5 +69,3 @@ fields:
       type: pages
       section: books
   label: Books
-pages:
-- forestry/collections/series/the-lord-of-the-rings.json
