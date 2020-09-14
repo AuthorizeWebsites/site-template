@@ -58,3 +58,5 @@ fields:
       format: html-blocks
   label: Description
   description: Be as verbose as you like.
+pages:
+- forestry/collections/universes/middle-earth.json
