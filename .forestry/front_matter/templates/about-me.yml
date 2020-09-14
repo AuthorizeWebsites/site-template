@@ -8,6 +8,8 @@ fields:
     required: false
   label: Header
   default: About Me
+  description: E.g. About Isaac Asimov, Who am I?, The Life and Lies of Albus Dumbledore,
+    etc.
 - name: headshot
   type: file
   config:
@@ -15,7 +17,7 @@ fields:
   label: Headshot
   description: 'Acceptable file extensions: png, jpeg, jpg, webp, avif, gif, PNG,
     JPEG, JPG, WEBP, AVIF, GIF'
-  default: "/forestry/defaultf.jpg"
+  default: ''
 - name: your_life_story
   type: textarea
   default: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue
