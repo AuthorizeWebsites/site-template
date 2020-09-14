@@ -1,4 +1,18 @@
 ---
 label: Test
 hide_body: true
-fields: []
+fields:
+- name: primary_text
+  type: text
+  config:
+    required: false
+  label: Primary Text
+  description: Shorter is better.
+  default: John Grisham
+- name: secondary_text
+  type: text
+  config:
+    required: false
+  label: Secondary Text
+  description: Shorter is <em>still</em> better.
+  default: America's Favorite Storyteller
