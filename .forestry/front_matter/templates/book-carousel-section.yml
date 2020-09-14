@@ -3,30 +3,44 @@ label: Book Carousel Section
 hide_body: true
 fields:
 - name: books
-  type: blocks
-  label: Books
-  template_types:
-  - book
+  type: list
   config:
+    use_select: true
     min: 1
     max: 
+    source:
+      type: pages
+      section: books
+  label: Books
 - name: showAdvancedSettings
   type: boolean
   label: Show Advanced Settings
   description: "There's a very small chance you need these, but they're here if you
     do. \U0001F44D"
-- name: infiniteLoop
-  type: boolean
-  label: Infinite Loop
-  default: true
-  showOnly:
-    field: showAdvancedSettings
-    value: true
-- name: autoPlay
-  type: boolean
-  label: Auto Play
-  description: Off means visitors have to click the arrows to progress the carousel.
-  default: true
+- name: advancedSettings
+  type: field_group
+  config: {}
+  fields:
+  - name: autoplay
+    type: boolean
+    label: Auto-play
+    default: true
+  - name: infiniteLoop
+    type: boolean
+    label: Infinite Loop
+    default: true
+  - name: slideDelay
+    type: number
+    label: Slide Delay
+    description: This is in milliseconds. E.g. 1000 = 1 second
+    default: 3500
+    required: true
+    config:
+      min: 0
+      max: 
+      step: 1
+      required: true
+  label: Advanced Settings
   showOnly:
     field: showAdvancedSettings
     value: true
