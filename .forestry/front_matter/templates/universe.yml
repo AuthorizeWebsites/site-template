@@ -2,6 +2,21 @@
 label: Universe
 hide_body: true
 fields:
+- name: name
+  type: text
+  config:
+    required: true
+  label: Name
+  description: E.g. Middle-earth, The Cosmere, Harry Potter's Wizarding World, etc.
+  default: Middle Earth
+- name: tagline
+  type: text
+  config:
+    required: false
+  label: Tagline
+  description: E.g. "One ring to rule them all", "One man saw it coming", "Fear is
+    the mindkiller", etc.
+  default: One ring to rule them all
 - name: series
   type: list
   config:
@@ -24,3 +39,21 @@ fields:
   label: Stand-alone Books
   description: Any book that's part of the universe, but isn't part of any of the
     a series in the universe should go here.
+- name: description
+  type: textarea
+  default: <p>Middle-earth is the fictional setting of much of the English writer
+    J. R. R. Tolkien's legendarium. The term is equivalent to the term <em>Midgard</em>
+    of Norse mythology, describing the human-inhabited world, that is, the central
+    continent of the Earth in Tolkien's imagined mythological past.</p><p>Tolkien's
+    most widely read works, <em>The Hobbit</em> and <em>The Lord of the Rings</em>,
+    are set entirely in Middle-earth; "Middle-earth" has also become a short-hand
+    for the legendarium and Tolkien's fictional take on the world.</p><p>Middle-earth
+    is the main continent of Earth (<em>Arda</em>) in an imaginary period of the Earth's
+    past with the end of the Third Age about 6,000 years ago.</p>
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+  description: Be as verbose as you like.
