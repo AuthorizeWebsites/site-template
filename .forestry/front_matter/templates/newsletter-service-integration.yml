@@ -4,11 +4,12 @@ hide_body: true
 fields:
 - name: service
   type: select
-  default: Mailchimp
+  default: No Integration
   config:
     required: true
     options:
     - Mailchimp
+    - No Integration
     source:
       type: simple
       section: 
