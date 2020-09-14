@@ -2,20 +2,20 @@
 label: Hero Section
 hide_body: true
 fields:
-- name: primary_text
+- name: primaryText
   type: text
   config:
     required: false
   label: Primary Text
+  default: ''
   description: Shorter is better.
-  default: John Grisham
-- name: secondary_text
+- name: secondaryText
   type: text
   config:
     required: false
   label: Secondary Text
   description: Shorter is <em>still</em> better.
-  default: America's Favorite Storyteller
+  default: ''
 - name: background
   type: file
   config:
