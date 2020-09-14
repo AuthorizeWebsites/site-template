@@ -25,6 +25,8 @@ fields:
       type: pages
       section: series
   label: Series
+  description: Create your series via the series collection. Then add them to your
+    universe, here.
 - name: stand-alone
   type: list
   config:
@@ -35,5 +37,6 @@ fields:
       type: pages
       section: books
   label: Stand-alone Books
-  description: Any book that's part of the universe, but isn't part of any of the
-    a series in the universe should go here.
+  description: Create your books via the books collection. Then add them to your universe,
+    here. Any book that's part of the universe, but isn't part of any of the a series
+    in the universe should go here.
