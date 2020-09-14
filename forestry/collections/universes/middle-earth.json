@@ -1,9 +1,9 @@
 {
   "name": "Middle Earth",
-  "tagline": "One ring to rule them all",
+  "tagline": "Literally the last place the elves want to be.",
   "description": "<p>Middle-earth is the fictional setting of much of the English writer J. R. R. Tolkien's legendarium. The term is equivalent to the term <em>Midgard</em> of Norse mythology, describing the human-inhabited world, that is, the central continent of the Earth in Tolkien's imagined mythological past.</p><p>Tolkien's most widely read works, <em>The Hobbit</em> and <em>The Lord of the Rings</em>, are set entirely in Middle-earth; \"Middle-earth\" has also become a short-hand for the legendarium and Tolkien's fictional take on the world.</p><p>Middle-earth is the main continent of Earth (<em>Arda</em>) in an imaginary period of the Earth's past with the end of the Third Age about 6,000 years ago.</p>",
   "series": [
-
+    "forestry/collections/series/the-lord-of-the-rings.json"
   ],
   "stand-alone": [
 
