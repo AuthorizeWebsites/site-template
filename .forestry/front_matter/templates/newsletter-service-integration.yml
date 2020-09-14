@@ -19,3 +19,20 @@ fields:
     on this list contact Authorize support (<a href="mailto:support@authorizewebsites.com"
     title="" target="_blank">support@authorizewebsites.com</a>) and we'll add support
     for it.
+- name: mailchimpConfig
+  type: field_group
+  config: {}
+  fields:
+  - name: API_KEY
+    type: text
+    config:
+      required: true
+      min: 36
+      max: 36
+    label: API Key
+    description: Details on how to generate a Mailchimp API key can be found <a href="https://mailchimp.com/help/about-api-keys/"
+      title="" target="_blank">here</a>.
+  label: Mailchimp Config
+  showOnly:
+    field: service
+    value: Mailchimp
