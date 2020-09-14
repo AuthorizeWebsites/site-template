@@ -1,7 +1,7 @@
 {
-  "service": "No Integration",
+  "service": "Mailchimp",
   "mailchimpConfig": {
-    "API_KEY": "",
-    "audienceId": ""
+    "API_KEY": "fa4c1e2b7be5bf91551f3d185e00e44b-us2",
+    "audienceId": "b0b60a6bbc"
   }
 }
