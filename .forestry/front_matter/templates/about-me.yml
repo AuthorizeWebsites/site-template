@@ -18,58 +18,16 @@ fields:
   description: 'Acceptable file extensions: png, jpeg, jpg, webp, avif, gif, PNG,
     JPEG, JPG, WEBP, AVIF, GIF'
   default: ''
-- name: your_life_story
+- name: yourLifeStory
   type: textarea
-  default: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue
-    vel metus sit amet maximus. Phasellus ipsum erat, fermentum ut consequat id, tristique
-    vitae magna. Duis id lorem faucibus, vehicula diam sit amet, tincidunt nibh. Vivamus
-    maximus scelerisque gravida. Maecenas consectetur nec risus nec ultricies. Integer
-    scelerisque consectetur dui ac laoreet. Aenean lobortis congue lorem vel blandit.
-    Praesent pulvinar nisl eu nisl scelerisque elementum. Nam fringilla enim sed risus
-    scelerisque, nec condimentum eros condimentum. Praesent sit amet dolor ante. Quisque
-    tincidunt nec quam vitae dapibus. Donec ac finibus urna. Sed ornare rhoncus tellus
-    in fermentum. Suspendisse sed posuere ligula. Duis lacinia malesuada erat, quis
-    luctus quam convallis et. Nullam vestibulum metus tortor, eget semper lorem pretium
-    id.</p><p>Mauris venenatis ultricies ante, sit amet venenatis nibh dictum nec.
-    Quisque convallis nisi lorem, eu tincidunt arcu vulputate placerat. Ut consectetur
-    facilisis eros, quis placerat erat gravida ac. Donec tempus neque vulputate neque
-    condimentum, ac eleifend justo condimentum. Pellentesque non nulla eu metus tempor
-    mollis. Suspendisse varius purus velit, nec malesuada arcu aliquet non. Sed lobortis
-    nec eros aliquet dictum. Duis sit amet fringilla justo. Nullam lectus velit, pellentesque
-    nec sem vel, pharetra dignissim quam. Cras malesuada suscipit velit, a pellentesque
-    nulla aliquam in. Aenean id enim erat. Proin id diam maximus, hendrerit ex id,
-    cursus nisl. Proin sodales porttitor quam eu ullamcorper. Nulla hendrerit sapien
-    lectus, at elementum dolor rutrum in.</p><p>Maecenas congue elementum maximus.
-    Ut tellus quam, tincidunt non tempus nec, blandit sit amet neque. Donec eget vestibulum
-    velit. Suspendisse orci nisi, consectetur sit amet diam nec, elementum dignissim
-    turpis. Phasellus congue, felis at porttitor interdum, urna leo pharetra lectus,
-    id tempus augue quam eu diam. Sed condimentum tellus eros, ac venenatis tortor
-    porttitor et. Fusce eu vestibulum mauris, at scelerisque urna. Vestibulum ante
-    ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut tincidunt,
-    nulla vel aliquam vehicula, magna nulla iaculis velit, vitae condimentum ligula
-    velit a nulla. Pellentesque vehicula tellus turpis, sit amet malesuada ipsum sodales
-    maximus. Aliquam ultricies pulvinar lorem, vitae dapibus nisi malesuada eget.
-    Fusce dictum facilisis orci eleifend dignissim. Duis maximus dui mauris, id facilisis
-    nisi scelerisque non. Pellentesque sit amet tellus eleifend, interdum mauris quis,
-    consectetur magna. Morbi ornare rutrum orci, vel ultrices orci ullamcorper nec.</p><p>Donec
-    nec tortor vulputate, lacinia massa ut, auctor tortor. Curabitur venenatis risus
-    in lectus mollis convallis. Cras tempor ultrices mollis. Sed luctus tellus ut
-    ornare auctor. Praesent massa elit, tincidunt quis vehicula et, viverra at dolor.
-    Duis ac nisi mi. Orci varius natoque penatibus et magnis dis parturient montes,
-    nascetur ridiculus mus.</p><p>Phasellus id porta sem. Etiam elementum purus eget
-    consequat viverra. Morbi dictum enim nibh, et egestas orci tincidunt a. In non
-    vehicula velit. Nullam eget purus velit. Sed dictum lacinia mollis. Vivamus et
-    risus vel dui feugiat ullamcorper. Vestibulum vulputate enim lobortis finibus
-    facilisis. Nam pulvinar nulla ut pellentesque consectetur. Duis volutpat tellus
-    quis ligula auctor, volutpat lacinia nisl mollis. Curabitur mattis nibh sit amet
-    enim semper, eget euismod nisl imperdiet. In hac habitasse platea dictumst. Ut
-    nec diam tempor, elementum nibh in, malesuada ligula. Aliquam magna mauris, posuere
-    et sem euismod, lacinia posuere nunc. Nunc nec dui vitae magna gravida bibendum.</p>"
+  default: "<p></p>"
   config:
     required: false
     wysiwyg: true
     schema:
       format: html-blocks
   label: Your Life Story
+  description: Tell your readers about yourself. Be as long-winded as you like, and
+    feel free to take advantage of the formatting options in the editor.
 pages:
 - forestry/pages/about-me.json
