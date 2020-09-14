@@ -3,7 +3,44 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: Integrations
+- type: document
+  path: forestry/integrations/newsletter-service.json
+  label: Newsletter Service
+  match: "**/*"
+  read_only: false
+- type: heading
+  label: One-off Pages
+- type: document
+  path: forestry/pages/home.json
+  label: Home
+  match: "**/*"
+- type: document
+  path: forestry/pages/about-me.json
+  label: About Me
+  match: "**/*"
+- type: heading
+  label: Collections
+- type: directory
+  path: forestry/collections/books
+  label: Books
+  create: documents
+  match: "*.json"
+  new_doc_ext: json
+- type: directory
+  path: forestry/collections/series
+  label: Series
+  create: documents
+  match: "*.json"
+  new_doc_ext: json
+- type: directory
+  path: forestry/collections/universes
+  label: Universes
+  create: documents
+  match: "*.json"
+  new_doc_ext: json
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
