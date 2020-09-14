@@ -1,6 +1,7 @@
 {
-  "service": "Mailchimp",
+  "service": "No Integration",
   "mailchimpConfig": {
-    "API_KEY": ""
+    "API_KEY": "",
+    "audienceId": ""
   }
 }
