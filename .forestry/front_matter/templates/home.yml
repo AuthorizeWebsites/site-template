@@ -7,3 +7,5 @@ fields:
   config: {}
   template: about-me
   label: Embedded Page
+pages:
+- forestry/pages/home.json
