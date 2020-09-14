@@ -2,10 +2,13 @@
 label: Home Page
 hide_body: false
 fields:
-- name: embedded_page
-  type: include
-  config: {}
-  template: about-me
-  label: Embedded Page
+- name: sections
+  type: blocks
+  label: Sections
+  template_types:
+  - test
+  config:
+    min: 
+    max: 
 pages:
 - forestry/pages/home.json
