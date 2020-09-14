@@ -28,18 +28,24 @@ sections:
   create: documents
   match: "*.json"
   new_doc_ext: json
+  templates:
+  - book
 - type: directory
   path: forestry/collections/series
   label: Series
   create: documents
   match: "*.json"
   new_doc_ext: json
+  templates:
+  - series
 - type: directory
   path: forestry/collections/universes
   label: Universes
   create: documents
   match: "*.json"
   new_doc_ext: json
+  templates:
+  - universe
 upload_dir: public/forestry
 public_path: "/forestry"
 front_matter_path: ''
