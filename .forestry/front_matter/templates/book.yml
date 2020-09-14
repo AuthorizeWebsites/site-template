@@ -13,7 +13,7 @@ fields:
 - name: title
   type: text
   config:
-    required: true
+    required: false
   label: Title
   description: E.g. War and Peace, The Iliad, The Cat in the Hat, etc.
   default: ''
