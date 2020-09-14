@@ -1,4 +1,12 @@
 ---
 label: About Me Page Content
 hide_body: true
-fields: []
+fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+  description: Probably something like "About Jane Smith", but you can get as creative
+    as you'd like.
+  default: About Me
