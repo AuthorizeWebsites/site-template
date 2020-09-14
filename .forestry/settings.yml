@@ -4,15 +4,14 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: forestry/integrations/affiliate-codes-service.json
-  label: Affiliate Codes Service
-  match: "**/*"
 - type: heading
   label: Integrations
 - type: document
   path: forestry/integrations/newsletter-service.json
   label: Newsletter Service
+- type: document
+  path: forestry/integrations/affiliate-codes-service.json
+  label: Affiliate Codes Service
 - type: heading
   label: One-off Pages
 - type: document
