@@ -1,4 +1,26 @@
 ---
 label: Short Biography Section
 hide_body: true
-fields: []
+fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: Header
+  description: E.g. A Short Bio, About Me, New Website, Who Dis?, etc.
+  default: A Short Bio
+- name: biography
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Biography
+  description: I've found one to two paragraphs is probably best, but you do you.
+- name: showReadMoreButton
+  type: boolean
+  label: Link To About Me Page
+  description: 'On: show the "Read More" button<br>Off: hide the "Read More" button'
+  default: true
