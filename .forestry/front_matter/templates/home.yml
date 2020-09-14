@@ -10,5 +10,9 @@ fields:
   config:
     min: 
     max: 
+  description: Each section is like a little module. Stack them on top of each other
+    to create your ideal homepage. If you'd like a custom section type, contact (<a
+    href="mailto:support@authorizewebsites.com" title="" target="_blank">support@authorizewebsites.com</a>)
+    for pricing and time estimates.
 pages:
 - forestry/pages/home.json
