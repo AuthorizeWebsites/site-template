@@ -4,19 +4,15 @@
       "template": "test",
       "primary_text": "John Grisham",
       "secondary_text": "America's Favorite Storyteller",
-      "background": ""
+      "background": "",
+      "primaryText": "",
+      "secondaryText": ""
     },
     {
-      "template": "test",
-      "primary_text": "John Grisham",
-      "secondary_text": "America's Favorite Storyteller",
-      "background": ""
-    },
-    {
-      "template": "test",
-      "primary_text": "John Grisham",
-      "secondary_text": "America's Favorite Storyteller",
-      "background": ""
+      "template": "short-biography-section",
+      "header": "A Short Bio",
+      "showReadMoreButton": true,
+      "biography": ""
     }
   ]
 }
