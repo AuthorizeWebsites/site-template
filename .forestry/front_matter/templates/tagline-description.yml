@@ -1,4 +1,22 @@
 ---
 label: Tagline & Description
 hide_body: true
-fields: []
+fields:
+- name: tagline
+  type: text
+  config:
+    required: false
+  label: Tagline
+  description: E.g. One ring to rule them all, Fear is the mindkiller, One man saw
+    it coming, etc.
+  default: ''
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: Description
+  description: Go crazy with the formatting!
