@@ -32,3 +32,5 @@ fields:
     max: 
     labelField: 
   label: Affiliate Service
+pages:
+- forestry/integrations/affiliate-codes-service.json

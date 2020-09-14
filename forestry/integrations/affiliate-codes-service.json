@@ -1,1 +1,8 @@
-{}
+{
+  "affiliateService": [
+    {
+      "service": "Amazon",
+      "affiliateCode": "abcd1234"
+    }
+  ]
+}
