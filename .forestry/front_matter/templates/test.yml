@@ -16,3 +16,9 @@ fields:
   label: Secondary Text
   description: Shorter is <em>still</em> better.
   default: America's Favorite Storyteller
+- name: background
+  type: file
+  config:
+    maxSize: 64
+  label: Background
+  description: Low detail images like landscapes work best.
