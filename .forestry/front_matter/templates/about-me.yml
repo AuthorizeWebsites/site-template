@@ -8,5 +8,12 @@ fields:
     required: false
   label: Header
   default: About Me
+- name: headshot
+  type: file
+  config:
+    maxSize: 64
+  label: Headshot
+  description: Acceptable file extensions:<br>- png<br>- jpeg<br>- jpg<br>- webp<br>-
+    avif<br>- gif<br>- PNG<br>- JPEG<br>- JPG<br>- WEBP<br>- AVIF<br>- GIF.
 pages:
 - forestry/pages/about-me.json
