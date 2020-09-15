@@ -13,6 +13,13 @@
       "header": "A Short Bio",
       "showReadMoreButton": true,
       "biography": ""
+    },
+    {
+      "template": "newsletter-sign-up-section",
+      "customization": {
+        "header": "Sign-up for my newsletter!",
+        "secondaryText": "I'll keep you updated on what I'm up to, but I promise not to spam!"
+      }
     }
   ]
 }
