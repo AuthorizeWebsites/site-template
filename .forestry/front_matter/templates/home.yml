@@ -6,10 +6,10 @@ fields:
   type: blocks
   label: Sections
   template_types:
-  - test
   - short-biography-section
   - book-carousel-section
   - newsletter-sign-up-section
+  - hero-section
   config:
     min: 
     max: 
