@@ -30,8 +30,8 @@
     {
       "template": "newsletter-sign-up-section",
       "customization": {
-        "header": "Sign-up for my newsletter!",
-        "secondaryText": "I'll keep you updated on what I'm up to, but I promise not to spam!"
+        "header": "Sign-up for the Tolkien Newsletter!",
+        "secondaryText": "We keep you updated on what the father of fantasy's writing, and we promise we won't spam you (because he's dead)."
       }
     }
   ]
