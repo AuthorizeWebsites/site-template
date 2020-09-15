@@ -29,3 +29,4 @@ fields:
   label: Tagline & Description
 pages:
 - forestry/collections/books/the-fellowship-of-the-ring.json
+- forestry/collections/books/the-two-towers.json
