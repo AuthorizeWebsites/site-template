@@ -27,3 +27,5 @@ fields:
   config: {}
   template: tagline-description
   label: Tagline & Description
+pages:
+- forestry/collections/books/the-fellowship-of-the-ring.json
