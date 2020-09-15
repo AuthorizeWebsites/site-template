@@ -1,7 +1,7 @@
 {
   "sections": [
     {
-      "template": "test",
+      "template": "hero-section",
       "primary_text": "John Grisham",
       "secondary_text": "America's Favorite Storyteller",
       "background": "",

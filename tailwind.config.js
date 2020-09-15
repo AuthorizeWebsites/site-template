@@ -5,6 +5,9 @@ module.exports = {
   },
   purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
   theme: {},
-  variants: {},
+  variants: {
+    backgroundClip: ["responsive", "hover", "focus"],
+    backgroundImage: ["responsive", "hover", "focus"],
+  },
   plugins: [require("@tailwindcss/ui"), require("@tailwindcss/typography")],
 };
