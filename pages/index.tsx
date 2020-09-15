@@ -1,5 +1,7 @@
 import data from "@forestry/pages/home.json";
 import Link from "next/link";
+import { Carousel } from "react-responsive-carousel";
+import { useState, useEffect } from "react";
 
 interface HeroSectionProps {
   background: string;
@@ -18,19 +20,19 @@ function HeroSection({
     <div
       className={`${
         isTopSection ? "" : "sm:mt-16 mt-4"
-      } relative flex items-center justify-center px-4 py-48 mt-4 bg-black sm:mt-16 sm:py-64`}
+      } relative flex items-center justify-center px-4 py-48 bg-black sm:py-64`}
     >
       <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
         <img src={background} className="object-cover min-h-full opacity-50" />
       </div>
       <div className="z-10 flex flex-col items-center max-w-4xl">
         {primaryText && (
-          <h1 className="text-5xl font-semibold leading-tight tracking-wider text-center text-gray-300">
+          <h1 className="text-5xl font-semibold leading-tight tracking-wider text-center text-white">
             {primaryText}
           </h1>
         )}
         {secondaryText && (
-          <h2 className="text-4xl font-semibold leading-tight tracking-wider text-center text-white">
+          <h2 className="text-4xl font-semibold leading-tight tracking-wider text-center text-gray-300">
             {secondaryText}
           </h2>
         )}
@@ -88,7 +90,7 @@ function NewsletterSignUpSection({
   return (
     <div className="px-4 mx-auto mt-4 max-w-7xl sm:mt-16">
       <div className="flex flex-col justify-between p-12 space-y-4 bg-gray-800 rounded-md shadow-2xl md:items-start md:space-y-0 md:space-x-12 md:flex-row">
-        <div className="flex-1 max-w-xl space-y-2">
+        <div className="flex-1 max-w-2xl space-y-2">
           <h1 className="text-3xl font-semibold leading-tight tracking-wider text-gray-300 sm:text-4xl">
             {header}
           </h1>
@@ -130,23 +132,128 @@ function NewsletterSignUpSection({
   );
 }
 
+interface BookCarouselSectionProps {
+  books: string[];
+}
+
+function BookCarouselSection(props: BookCarouselSectionProps) {
+  const [books, setBooks] = useState(Array(props.books.length).fill(undefined));
+
+  useEffect(() => {
+    props.books.forEach(async (path, i) => {
+      const book = await import(`../${path}`).then((module) => module.default);
+      setBooks((prev) => {
+        const newBooks = [...prev];
+        newBooks[i] = { ...book, filepath: path };
+        return newBooks;
+      });
+    });
+  }, []);
+
+  if (books.some((elem) => elem === undefined)) return null;
+
+  return (
+    <div className="px-4 mx-auto mt-4 max-w-7xl sm:mt-16">
+      <Carousel
+        showThumbs={false}
+        showStatus={false}
+        showIndicators={false}
+        showArrows={true}
+        autoPlay={true}
+        infiniteLoop={true}
+        swipeable={true}
+        interval={3500}
+        className="min-h-full overflow-hidden rounded-sm shadow-lg"
+      >
+        {books.map((book) => (
+          <div
+            key={book.title}
+            className="relative flex items-center justify-center min-h-full px-6 py-4 sm:px-10 sm:py-16"
+          >
+            <div
+              className="absolute inset-0 flex items-center justify-center overflow-hidden bg-black shadow-inner"
+              style={{ minHeight: "120%" }}
+            >
+              <img
+                src={book.covers[0]}
+                className="absolute inset-0 object-top min-w-full min-h-full transform scale-150 opacity-75"
+                style={{
+                  filter: "blur(35px)",
+                }}
+              />
+            </div>
+            <div className="z-10 flex flex-col items-center justify-center p-4 space-y-4 bg-white rounded-sm shadow-lg /w-full /self-stretch md:w-auto sm:p-8 md:space-y-0 md:space-x-8 md:flex-row">
+              <Link
+                href="/books/[id]"
+                as={`/books/${
+                  book.filepath.split("/")[book.filepath.split("/").length - 1]
+                }`}
+              >
+                <a className="transition-all duration-300 ease-in-out transform hover:scale-105">
+                  <img
+                    key={book.title}
+                    src={book.covers[0]}
+                    className="relative z-10 rounded-sm shadow-lg h-96"
+                    style={{ width: "auto" }}
+                  />
+                </a>
+              </Link>
+              {book.description && (
+                <div className="z-10 self-stretch hidden max-h-full overflow-y-hidden break-words sm:break-normal sm:block">
+                  <div className="flex flex-col items-start self-stretch justify-start max-w-3xl">
+                    <h1 className="text-3xl font-semibold leading-tight tracking-wider text-left text-gray-700">
+                      {book.title}
+                    </h1>
+                    <div className="relative h-96">
+                      <div
+                        className="max-w-full pb-24 overflow-y-auto prose text-left sm:prose-lg max-h-96 overscroll-y-contain"
+                        dangerouslySetInnerHTML={{ __html: book.description }}
+                      />
+                      <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white to-transparent" />
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  );
+}
+
 export default function HomeMePage() {
   return (
     <div className="/space-y-4 /sm:space-y-16">
       {data.sections.map(({ template, ...props }, index) => {
         switch (template) {
           case "hero-section":
-            return <HeroSection {...(props as HeroSectionProps)} />;
+            return (
+              <HeroSection
+                key={index}
+                {...(props as HeroSectionProps)}
+                isTopSection={index === 0}
+              />
+            );
           case "short-biography-section":
             return (
               <ShortBiographySection
+                key={index}
                 {...(props as ShortBiographySectionProps)}
               />
             );
           case "newsletter-sign-up-section":
             return (
               <NewsletterSignUpSection
+                key={index}
                 {...(props.customization as NewsletterSignUpSectionProps)}
+              />
+            );
+          case "book-carousel-section":
+            return (
+              <BookCarouselSection
+                key={index}
+                {...(props as BookCarouselSectionProps)}
               />
             );
         }

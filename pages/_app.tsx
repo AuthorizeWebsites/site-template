@@ -1,7 +1,7 @@
 import "@styles/index.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { AppProps } from "next/app";
 import { Header } from "@components/Header";
-import Link from "next/link";
 import { Footer } from "@components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Header />
         <div className="flex flex-col flex-1">
           <Component {...pageProps} />
-          <div className="flex-1 py-4" />
+          <div className="flex-1 py-8" />
           <Footer />
         </div>
       </div>
