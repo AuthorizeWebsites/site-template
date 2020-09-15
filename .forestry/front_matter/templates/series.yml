@@ -27,3 +27,5 @@ fields:
   label: Books
   description: Create your books via the books collection. Then add them to your series,
     here.
+pages:
+- forestry/collections/series/the-lord-of-the-rings.json
