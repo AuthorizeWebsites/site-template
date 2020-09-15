@@ -2,11 +2,9 @@
   "sections": [
     {
       "template": "hero-section",
-      "primary_text": "John Grisham",
-      "secondary_text": "America's Favorite Storyteller",
-      "background": "",
-      "primaryText": "",
-      "secondaryText": ""
+      "secondaryText": "Welcome the the home of Author Name",
+      "background": "/forestry/landscape.jpg",
+      "primaryText": ""
     },
     {
       "template": "short-biography-section",
