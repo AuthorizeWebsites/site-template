@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Header />
         <div className="flex flex-col flex-1">
           <Component {...pageProps} />
-          <div className="flex-1" />
+          <div className="flex-1 py-4" />
           <Footer />
         </div>
       </div>
