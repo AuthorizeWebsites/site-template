@@ -40,3 +40,5 @@ fields:
   description: Create your books via the books collection. Then add them to your universe,
     here. Any book that's part of the universe, but isn't part of any of the a series
     in the universe should go here.
+pages:
+- forestry/collections/universes/the-lord-of-the-rings.json
