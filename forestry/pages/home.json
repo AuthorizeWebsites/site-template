@@ -2,9 +2,9 @@
   "sections": [
     {
       "template": "hero-section",
-      "secondaryText": "Welcome the the home of Author Name",
+      "secondaryText": "The father of modern fantasy",
       "background": "/forestry/landscape.jpg",
-      "primaryText": ""
+      "primaryText": "J.R.R. Tolkien"
     },
     {
       "template": "short-biography-section",
