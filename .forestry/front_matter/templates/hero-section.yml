@@ -15,10 +15,11 @@ fields:
     required: false
   label: Secondary Text
   description: Shorter is <em>still</em> better.
-  default: ''
+  default: Welcome the the home of Author Name
 - name: background
   type: file
   config:
     maxSize: 64
   label: Background
   description: Low detail images like landscapes work best.
+  default: "/forestry/landscape.jpg"
