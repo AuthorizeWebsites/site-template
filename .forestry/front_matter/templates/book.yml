@@ -27,6 +27,11 @@ fields:
   config: {}
   template: tagline-description
   label: Tagline & Description
+- name: buyLinks
+  type: include
+  config: {}
+  template: buy-links
+  label: Buy LInks
 pages:
 - forestry/collections/books/the-fellowship-of-the-ring.json
 - forestry/collections/books/the-hobbit.json
