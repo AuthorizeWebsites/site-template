@@ -27,6 +27,7 @@ fields:
     showOnly:
       field: platform
       value: Other
+    default: Your Platform Name
   - name: link
     type: text
     config:
