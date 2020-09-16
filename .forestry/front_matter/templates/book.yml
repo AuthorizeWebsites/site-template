@@ -31,7 +31,7 @@ fields:
   type: include
   config: {}
   template: buy-links
-  label: Buy LInks
+  label: Buy Links
 pages:
 - forestry/collections/books/the-fellowship-of-the-ring.json
 - forestry/collections/books/the-hobbit.json
