@@ -23,7 +23,7 @@ fields:
     type: text
     config:
       required: true
-    label: Custom Platform Name
+    label: Custom Platform's Name
     showOnly:
       field: platform
       value: Other
