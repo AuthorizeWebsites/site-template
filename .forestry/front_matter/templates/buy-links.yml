@@ -39,5 +39,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: platform
   label: Buy Links
