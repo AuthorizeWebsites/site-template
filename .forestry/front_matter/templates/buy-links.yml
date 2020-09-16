@@ -1,4 +1,42 @@
 ---
 label: Buy Links
 hide_body: true
-fields: []
+fields:
+- name: buyLinks
+  type: field_group_list
+  fields:
+  - name: platform
+    type: select
+    default: Amazon
+    config:
+      required: true
+      options:
+      - Amazon
+      - Other
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Platform
+  - name: customPlatformName
+    type: text
+    config:
+      required: true
+    label: Custom Platform Name
+    showOnly:
+      field: platform
+      value: Other
+  - name: link
+    type: text
+    config:
+      required: true
+    label: Link
+    description: If you've setup your Affiliate Codes Service integration to handle
+      this platform, your affiliate code will automatically be added to this link.
+      If you haven't, the link will be used as is.
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Buy Links
