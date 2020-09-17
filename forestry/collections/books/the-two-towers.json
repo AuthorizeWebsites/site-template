@@ -10,5 +10,10 @@
   "description": "<p><em>The Two Towers</em> is the second volume of J. R. R. Tolkien's high fantasy novel <em>The Lord of the Rings</em>. It is preceded by <em>The Fellowship of the Ring</em> and followed by <em>The Return of the King</em>.</p><p>Some editions of the volume contain a Synopsis for readers who have not read the earlier volumes. The body of the volume consists of Book III: The Treason of Isengard, and Book IV: The Ring Goes East.</p>",
   "buyLinks": [
 
+  ],
+  "genres": [
+    {
+      "genreName": "Fantasy"
+    }
   ]
 }
