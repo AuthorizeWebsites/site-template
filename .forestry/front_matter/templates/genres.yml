@@ -34,6 +34,8 @@ fields:
       - Political
       - Crime
       - Drama
+      - Mythology
+      - Fairy Tale
       source:
         type: simple
         section: 
