@@ -13,6 +13,9 @@
   ],
   "genres": [
     {
+      "genreName": "Fantasy"
+    },
+    {
       "genreName": "Young Adult"
     }
   ]
