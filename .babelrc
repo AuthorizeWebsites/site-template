@@ -1,0 +1,4 @@
+{
+  "plugins": [["wildcard", { "exts": ["js", "jsx", "ts", "tsx", "json"] }]],
+  "presets": ["next/babel"]
+}
