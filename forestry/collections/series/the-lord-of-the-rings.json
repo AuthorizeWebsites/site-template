@@ -6,5 +6,10 @@
     "forestry/collections/books/the-fellowship-of-the-ring.json",
     "forestry/collections/books/the-two-towers.json",
     "forestry/collections/books/the-return-of-the-king.json"
+  ],
+  "genres": [
+    {
+      "genreName": "Fantasy"
+    }
   ]
 }
