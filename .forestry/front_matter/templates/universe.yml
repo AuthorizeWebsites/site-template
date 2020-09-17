@@ -40,5 +40,10 @@ fields:
   description: Create your books via the books collection. Then add them to your universe,
     here. Any book that's part of the universe, but isn't part of any of the a series
     in the universe should go here.
+- name: genres
+  type: include
+  config: {}
+  template: genres
+  label: Genres
 pages:
 - forestry/collections/universes/middle-earth.json
