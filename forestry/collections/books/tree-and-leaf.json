@@ -17,6 +17,9 @@
   ],
   "genres": [
     {
+      "genreName": "Fantasy"
+    },
+    {
       "genreName": "Fairy Tale"
     },
     {
