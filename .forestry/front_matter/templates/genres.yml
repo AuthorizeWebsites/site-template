@@ -1,4 +1,75 @@
 ---
 label: Genres
 hide_body: true
-fields: []
+fields:
+- name: genre
+  type: select
+  default: Science Fiction
+  config:
+    required: true
+    options:
+    - Nonfiction
+    - Science Fiction
+    - Fantasy
+    - Realistic Fiction
+    - Action & Adventure
+    - Alternate History
+    - Anthology
+    - Chick Lit
+    - Children's
+    - Comic Book
+    - Coming-of-age
+    - Crime
+    - Drama
+    - Fairytale
+    - Graphic Novel
+    - Historical Fiction
+    - Horror
+    - Mystery
+    - Paranormal
+    - Picture Book
+    - Poetry
+    - Political
+    - Thriller
+    - Romance
+    - Satire
+    - Suspense
+    - Western
+    - Young Adult
+    - Art
+    - Architecture
+    - Autobiography
+    - Biography
+    - Business & Economics
+    - Crafts & Hobbies
+    - Cookbook
+    - Diary
+    - Dictionary
+    - Encyclopedia
+    - Guide
+    - Health & Fitness
+    - History
+    - Home & Garden
+    - Humor
+    - Journal
+    - Math
+    - Memoir
+    - Philosophy
+    - Religion
+    - Spirituality
+    - Textbook
+    - True Crime
+    - Self-help
+    - Sports & Leisure
+    - Travel
+    - Military
+    - Police
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Genre
+  description: 'These are built-in genres. If you have a custom genre you''d like
+    to use, just add it to the Custom Genres list below. Note: as a custom genre it
+    will be your job to use the same spelling, case, etc. across all your books.'
