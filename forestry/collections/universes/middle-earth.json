@@ -12,5 +12,10 @@
   "standAloneBooks": [
     "forestry/collections/books/the-hobbit.json",
     "forestry/collections/books/the-silmarillion.json"
+  ],
+  "genres": [
+    {
+      "genreName": "Fantasy"
+    }
   ]
 }
