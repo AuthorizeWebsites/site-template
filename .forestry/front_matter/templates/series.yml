@@ -27,5 +27,10 @@ fields:
   label: Books
   description: Create your books via the books collection. Then add them to your series,
     here.
+- name: genres
+  type: include
+  config: {}
+  template: genres
+  label: Genres
 pages:
 - forestry/collections/series/the-lord-of-the-rings.json
