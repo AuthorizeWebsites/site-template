@@ -33,17 +33,9 @@ fields:
   template: buy-links
   label: Buy Links
 - name: genres
-  type: field_group_list
-  fields:
-  - name: genre
-    type: include
-    config: {}
-    template: genres
-    label: Genre
-  config:
-    min: 
-    max: 
-    labelField: 
+  type: include
+  config: {}
+  template: genres
   label: Genres
 pages:
 - forestry/collections/books/the-fellowship-of-the-ring.json
