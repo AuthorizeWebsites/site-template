@@ -14,5 +14,10 @@
       "customPlatformName": "Your Platform Name",
       "link": "https://www.amazon.com/Tree-Leaf-Mythopoeia-J-R-R-Tolkien/dp/0007105045"
     }
+  ],
+  "genres": [
+    {
+      "genre": "Science Fiction"
+    }
   ]
 }
