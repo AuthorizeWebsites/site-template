@@ -1,73 +1,47 @@
 ---
-label: Genre Select
+label: Genres Select
 hide_body: true
 display_field: genre
 fields:
-- name: genre
-  type: select
-  default: Science Fiction
+- name: genres
+  type: field_group_list
+  fields:
+  - name: genreName
+    type: select
+    default: Science Fiction
+    config:
+      required: true
+      options:
+      - Nonfiction
+      - Science Fiction
+      - Fantasy
+      - Historical Fiction
+      - Autobiography
+      - Biography
+      - Memoir
+      - Thriller
+      - Horror
+      - Military
+      - Philosophy
+      - Religion
+      - Science
+      - Self-help
+      - Health
+      - Action & Adventure
+      - Survival
+      - Coming-of-age
+      - Young Adult
+      - Political
+      - Crime
+      - Drama
+      source:
+        type: simple
+        section: 
+        file: 
+        path: 
+    label: Genre Name
   config:
-    required: true
-    options:
-    - Nonfiction
-    - Science Fiction
-    - Fantasy
-    - Realistic Fiction
-    - Action & Adventure
-    - Alternate History
-    - Anthology
-    - Chick Lit
-    - Children's
-    - Comic Book
-    - Coming-of-age
-    - Crime
-    - Drama
-    - Fairytale
-    - Graphic Novel
-    - Historical Fiction
-    - Horror
-    - Mystery
-    - Paranormal
-    - Picture Book
-    - Poetry
-    - Political
-    - Thriller
-    - Romance
-    - Satire
-    - Suspense
-    - Western
-    - Young Adult
-    - Art
-    - Architecture
-    - Autobiography
-    - Biography
-    - Business & Economics
-    - Crafts & Hobbies
-    - Cookbook
-    - Diary
-    - Dictionary
-    - Encyclopedia
-    - Guide
-    - Health & Fitness
-    - History
-    - Home & Garden
-    - Humor
-    - Journal
-    - Math
-    - Memoir
-    - Philosophy
-    - Religion
-    - Spirituality
-    - Textbook
-    - True Crime
-    - Self-help
-    - Sports & Leisure
-    - Travel
-    - Military
-    - Police
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Genre
+    min: 
+    max: 
+    labelField: 
+  label: Genres
