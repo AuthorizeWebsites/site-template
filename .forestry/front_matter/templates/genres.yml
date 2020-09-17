@@ -43,5 +43,5 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: genreName
   label: Genres
