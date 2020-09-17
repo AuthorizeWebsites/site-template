@@ -3,44 +3,42 @@ label: Universe
 hide_body: true
 display_field: name
 fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: Name
-    description: E.g. Middle-earth, The Cosmere, The Wizarding World, The Expanse, etc.
-    default: ""
-  - name: taglineAndDescription
-    type: include
-    config: {}
-    template: tagline-description
-    label: Tagline & Description
-  - name: series
-    type: list
-    config:
-      use_select: true
-      min:
-      max:
-      source:
-        type: pages
-        section: series
-    label: Series
-    description:
-      Create your series via the series collection. Then add them to your
-      universe, here.
-  - name: stand-alone
-    type: list
-    config:
-      use_select: true
-      min:
-      max:
-      source:
-        type: pages
-        section: books
-    label: Stand-alone Books
-    description:
-      Create your books via the books collection. Then add them to your universe,
-      here. Any book that's part of the universe, but isn't part of any of the a series
-      in the universe should go here.
+- name: name
+  type: text
+  config:
+    required: false
+  label: Name
+  description: E.g. Middle-earth, The Cosmere, The Wizarding World, The Expanse, etc.
+  default: ''
+- name: taglineAndDescription
+  type: include
+  config: {}
+  template: tagline-description
+  label: Tagline & Description
+- name: series
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: series
+  label: Series
+  description: Create your series via the series collection. Then add them to your
+    universe, here.
+- name: standAloneBooks
+  type: list
+  config:
+    use_select: true
+    min: 
+    max: 
+    source:
+      type: pages
+      section: books
+  label: Stand-alone Books
+  description: Create your books via the books collection. Then add them to your universe,
+    here. Any book that's part of the universe, but isn't part of any of the a series
+    in the universe should go here.
 pages:
-  - forestry/collections/universes/middle-earth.json
+- forestry/collections/universes/middle-earth.json
