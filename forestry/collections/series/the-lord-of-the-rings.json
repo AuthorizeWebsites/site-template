@@ -9,6 +9,9 @@
   ],
   "genres": [
     {
+      "genreName": "Action & Adventure"
+    },
+    {
       "genreName": "Fantasy"
     }
   ]
