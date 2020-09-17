@@ -17,6 +17,9 @@
   ],
   "genres": [
     {
+      "genreName": "Mythology"
+    },
+    {
       "genreName": "Philosophy"
     }
   ]
