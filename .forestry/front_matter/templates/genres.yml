@@ -1,6 +1,7 @@
 ---
-label: Genres
+label: Genre Select
 hide_body: true
+display_field: genre
 fields:
 - name: genre
   type: select
