@@ -71,6 +71,3 @@ fields:
       file: 
       path: 
   label: Genre
-  description: 'These are built-in genres. If you have a custom genre you''d like
-    to use, just add it to the Custom Genres list below. Note: as a custom genre it
-    will be your job to use the same spelling, case, etc. across all your books.'
