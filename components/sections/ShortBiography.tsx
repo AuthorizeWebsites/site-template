@@ -25,8 +25,10 @@ export function ShortBiography({
         />
         {showReadMoreButton && (
           <Link href="/about-me">
-            <a className="inline-block px-4 py-2 text-xl font-semibold tracking-wider text-white bg-gray-800 rounded-md shadow-lg focus:shadow-outline-blue focus:outline-none hover:bg-gray-700">
-              Read More
+            <a className="inline-block px-4 py-2 text-xl font-semibold tracking-wider text-transparent bg-gray-800 rounded-md shadow-lg group focus:shadow-outline-yellow focus:outline-none">
+              <span className="text-transparent bg-clip-text bg-gradient-to-tr from-yellow-400 via-yellow-300 to-yellow-400 group-hover:from-yellow-300 group-hover:via-yellow-200 group-hover:to-yellow-300">
+                Read More
+              </span>
             </a>
           </Link>
         )}

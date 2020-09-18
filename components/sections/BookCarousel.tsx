@@ -49,7 +49,7 @@ export function BookCarousel({ books, advancedSettings }: BookCarouselProps) {
                   <img
                     key={book.title}
                     src={book.covers[0]}
-                    className="z-10 rounded-md shadow-lg h-96"
+                    className="z-10 w-full h-auto rounded-md shadow-lg sm:w-auto sm:h-96"
                     style={{ width: "auto" }}
                   />
                 </a>

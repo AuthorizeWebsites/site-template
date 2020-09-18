@@ -1,6 +1,5 @@
 import { Transition } from "@tailwindui/react";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { useState } from "react";
 
 export interface HeaderProps {}
@@ -18,11 +17,11 @@ function MobileMenu() {
   return (
     <div className="relative inline-block text-left">
       <div>
-        <span className="rounded-md /shadow-sm">
+        <span className="rounded-md">
           <button
             onClick={() => setShow((prev) => !prev)}
             type="button"
-            className="inline-flex justify-center w-full p-0 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white bg-opacity-0 rounded-md /border /border-gray-300 hover:text-gray-500 focus:outline-none focus:border-blue-300 /focus:shadow-outline-blue /active:bg-gray-50 active:text-gray-800"
+            className="inline-flex justify-center w-full p-0 text-sm font-medium leading-5 text-gray-700 transition duration-150 ease-in-out bg-white bg-opacity-0 rounded-md /border /border-gray-300 hover:text-gray-500 focus:outline-none focus:border-blue-300 active:text-gray-800"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"
@@ -55,7 +54,7 @@ function MobileMenu() {
         className="absolute right-0 w-56 mt-2 origin-top-right rounded-md shadow-lg"
       >
         <div className="absolute right-0 z-50 w-64 mt-4 -mr-2 origin-top-right rounded-md shadow-lg">
-          <div className="bg-gray-800 rounded-md shadow-xs">
+          <div className="bg-white border border-gray-300 rounded-md shadow-xs">
             <div
               className="py-1"
               role="menu"
@@ -63,10 +62,10 @@ function MobileMenu() {
               aria-labelledby="options-menu"
             >
               {items.map(({ text, href }) => (
-                <Link href={href}>
+                <Link href={href} key={text}>
                   <a
                     onClick={() => setShow(false)}
-                    className="block px-4 py-2 text-lg leading-5 text-white focus:outline-none "
+                    className="block px-4 py-2 text-lg leading-5 text-gray-800 focus:outline-none "
                     role="menuitem"
                   >
                     {text}
@@ -82,11 +81,9 @@ function MobileMenu() {
 }
 
 export function Header({}: HeaderProps) {
-  const router = useRouter();
-
   return (
     <>
-      <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between py-2 leading-none tracking-wider text-gray-700 bg-white bg-opacity-75 border-b border-gray-200 border-opacity-50 BD-FILTER">
+      <header className="sticky top-0 z-20 flex flex-wrap items-center justify-between py-2 leading-none tracking-wider text-gray-700 bg-white border-b border-gray-300 shadow-xs">
         <div className="px-2 py-1 sm:p-2">
           <Link href="/">
             <a className="block p-1 text-3xl font-bold rounded-md sm:p-2 focus:outline-none hover:bg-gradient-to-tr hover:from-yellow-400 hover:to-yellow-500 hover:text-transparent hover:bg-clip-text focus:text-gray-900">
@@ -111,11 +108,6 @@ export function Header({}: HeaderProps) {
           <MobileMenu />
         </div>
       </header>
-      <style jsx>{`
-        .BD-FILTER {
-          backdrop-filter: blur(16px);
-        }
-      `}</style>
     </>
   );
 }

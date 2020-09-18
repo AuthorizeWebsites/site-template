@@ -7,9 +7,14 @@ export default function BooksIdPage() {
 
   if (router?.query?.id === undefined) return null;
 
-  const { name, tagline, description, books, universe } = collections.series[
-    router.query.id as string
-  ];
+  const {
+    name,
+    tagline,
+    description,
+    books,
+    universe,
+    genres,
+  } = collections.series[router.query.id as string];
 
   return (
     <div>
@@ -21,6 +26,21 @@ export default function BooksIdPage() {
           <h3 className="text-xl font-light tracking-wide text-gray-600">
             {tagline}
           </h3>
+          <p className="max-w-3xl pt-2 mx-auto text-center">
+            {genres
+              .map(({ genreName }) => genreName)
+              .map((name) => (
+                <Link
+                  key={name}
+                  href="/genres/[id]"
+                  as={`/genres/${name.split(" ").join("")}`}
+                >
+                  <a className="px-3 py-2 m-2 text-white transition-all duration-300 ease-in-out bg-gray-800 rounded-full shadow-md opacity-75 hover:opacity-100 hover:shadow-lg hover:bg-gray-900">
+                    {name}
+                  </a>
+                </Link>
+              ))}
+          </p>
         </div>
         {description && (
           <>

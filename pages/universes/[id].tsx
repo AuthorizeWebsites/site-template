@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import collections from "@forestry/collections";
+import { Book, Series } from "@pages/books";
 
 export default function BooksIdPage() {
   const router = useRouter();
@@ -12,7 +13,8 @@ export default function BooksIdPage() {
     tagline,
     description,
     series,
-    ["stand-alone"]: standAloneBooks,
+    standAloneBooks,
+    genres,
   } = collections.universes[router.query.id as string];
 
   return (
@@ -24,6 +26,21 @@ export default function BooksIdPage() {
         <h3 className="text-xl font-light tracking-wide text-gray-600">
           {tagline}
         </h3>
+        <p className="max-w-3xl pt-2 mx-auto text-center">
+          {genres
+            .map(({ genreName }) => genreName)
+            .map((name) => (
+              <Link
+                key={name}
+                href="/genres/[id]"
+                as={`/genres/${name.split(" ").join("")}`}
+              >
+                <a className="px-3 py-2 m-2 text-white transition-all duration-300 ease-in-out bg-gray-800 rounded-full shadow-md opacity-75 hover:opacity-100 hover:shadow-lg hover:bg-gray-900">
+                  {name}
+                </a>
+              </Link>
+            ))}
+        </p>
       </div>
       {description && (
         <>
@@ -34,55 +51,17 @@ export default function BooksIdPage() {
           />
         </>
       )}
-      <div className="w-full p-4 space-y-4 bg-gray-900 rounded-md shadow-xl">
+      <div className="w-full space-y-4 /p-4 /bg-gray-900 /rounded-md /shadow-xl">
         {series.map((series) => (
-          <Link href="/series/[id]" as={`/series/${series.id}`}>
-            <a className="block w-full transition-all duration-300 ease-in-out transform hover:scale-95">
-              <div className="flex flex-col items-center justify-center w-full p-4 space-y-2 text-center bg-gray-800 rounded-md shadow-xl">
-                <h1 className="text-3xl font-semibold leading-tight tracking-wider text-white">
-                  {series.name}
-                </h1>
-                <h3 className="text-xl font-light tracking-wide text-gray-100">
-                  {series.tagline}
-                </h3>
-                <div className="flex flex-wrap justify-center w-full">
-                  {series.books.map((bookProps) => (
-                    <div className="p-2">
-                      <div className="p-4 overflow-hidden bg-gray-700 rounded-md shadow-inner">
-                        <Link href="/books/[id]" as={`/books/${bookProps.id}`}>
-                          <a>
-                            <img
-                              src={bookProps.covers[0]}
-                              className="transition-all duration-300 ease-in-out transform rounded-md shadow-lg h-72 hover:scale-95"
-                            />
-                          </a>
-                        </Link>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </a>
-          </Link>
+          <Series {...series} />
         ))}
-        <div className="flex flex-col items-center w-full p-4 space-y-2 bg-gray-800 rounded-md shadow-xl">
-          <h1 className="text-3xl font-semibold leading-tight tracking-wider text-center text-white">
+        <div className="p-4 space-y-4 bg-gray-800 rounded-md shadow-xl">
+          <p className="inline-flex items-center text-xl font-semibold leading-tight tracking-wider text-white sm:text-2xl">
             Stand-alone Books
-          </h1>
-          <div className="flex flex-wrap justify-center w-full">
-            {standAloneBooks.map((bookProps) => (
-              <div className="p-2">
-                <div className="p-4 overflow-hidden bg-gray-700 rounded-md shadow-inner">
-                  <Link href="/books/[id]" as={`/books/${bookProps.id}`}>
-                    <a>
-                      <img
-                        src={bookProps.covers[0]}
-                        className="transition-all duration-300 ease-in-out transform rounded-md shadow-lg h-72 hover:scale-95"
-                      />
-                    </a>
-                  </Link>
-                </div>
-              </div>
+          </p>
+          <div className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {standAloneBooks.map((book) => (
+              <Book key={book.id} {...book} />
             ))}
           </div>
         </div>

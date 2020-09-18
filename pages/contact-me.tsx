@@ -22,7 +22,7 @@ export default function ContactMePage() {
             Let's talk
           </h1>
           <input
-            className="border-none rounded-md form-input"
+            className="border-none rounded-md form-input focus:shadow-outline-yellow"
             type="email"
             required
             aria-label="your email"
@@ -30,14 +30,14 @@ export default function ContactMePage() {
           />
           <textarea
             required
-            className="border-none rounded-md form-textarea h-96"
+            className="border-none rounded-md form-textarea focus:shadow-outline-yellow h-96"
             aria-label="your message"
             placeholder="Your message..."
           />
           <span className="inline-flex rounded-md shadow-sm">
             <button
               type="submit"
-              className="inline-flex items-center justify-center w-full px-3 py-3 font-medium leading-4 text-gray-900 transition duration-150 ease-in-out bg-white rounded-md hover:bg-gray-200 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50"
+              className="inline-flex items-center justify-center w-full px-3 py-3 font-medium leading-4 text-gray-900 transition duration-150 ease-in-out bg-white rounded-md hover:bg-gray-200 focus:outline-none focus:border-blue-300 focus:shadow-outline-yellow active:text-gray-800 active:bg-gray-50"
             >
               Submit
             </button>

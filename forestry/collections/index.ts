@@ -8,11 +8,15 @@ type StringifiedHTML = string;
 
 type FilePath = string;
 
-type Collection<T> = { [_: string]: T | undefined };
+export type Collection<T> = { [_: string]: T | undefined };
 
 type ForestryItem = ForestryBook | ForestrySeries | ForestryUniverse;
 
 type PartiallyLinkedItem = Bookish | Seriesish | Universeish;
+
+interface Genre {
+  genreName: string;
+}
 
 interface ForestryBook {
   authors: string[];
@@ -21,6 +25,7 @@ interface ForestryBook {
   tagline?: string;
   description?: StringifiedHTML;
   buyLinks: any[];
+  genres: Genre[];
 }
 
 interface Bookish extends ForestryBook {
@@ -42,6 +47,7 @@ interface ForestrySeries {
   tagline?: string;
   description?: StringifiedHTML;
   books: FilePath[];
+  genres: Genre[];
 }
 
 interface Seriesish extends Omit<ForestrySeries, "books"> {
@@ -50,7 +56,7 @@ interface Seriesish extends Omit<ForestrySeries, "books"> {
   universe?: Universeish[];
 }
 
-interface Series extends Omit<Seriesish, "books"> {
+export interface Series extends Omit<Seriesish, "books"> {
   books: Book[];
   id: string;
   universe?: Universe[];
@@ -63,18 +69,21 @@ interface ForestryUniverse {
   tagline?: string;
   description?: StringifiedHTML;
   series: FilePath[];
-  ["stand-alone"]: FilePath[];
+  standAloneBooks: FilePath[];
+  genres: Genre[];
 }
 
-interface Universeish extends Omit<ForestryUniverse, "series" | "stand-alone"> {
+interface Universeish
+  extends Omit<ForestryUniverse, "series" | "standAloneBooks"> {
   series: (FilePath | Seriesish)[];
-  ["stand-alone"]: (FilePath | Bookish)[];
+  standAloneBooks: (FilePath | Bookish)[];
   id?: string;
 }
 
-interface Universe extends Omit<Universeish, "series" | "stand-alone"> {
+export interface Universe
+  extends Omit<Universeish, "series" | "standAloneBooks"> {
   series: Series[];
-  ["stand-alone"]: Book[];
+  standAloneBooks: Book[];
   id: string;
 }
 
@@ -135,7 +144,7 @@ export default (({
     { key: "serie", from: series },
     { key: "universes", from: universes },
     { key: "universe", from: universes },
-    { key: "stand-alone", from: books }, // todo: rename to books
+    { key: "standAloneBooks", from: books },
   ];
 
   const getCollectionsToSearch = ((possibilities: Possibilities) => (
