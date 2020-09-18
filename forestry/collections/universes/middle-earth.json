@@ -6,6 +6,9 @@
     "forestry/collections/series/the-lord-of-the-rings.json"
   ],
   "standAloneBooks": [
+    "forestry/collections/books/the-fall-of-gondolin.json",
+    "forestry/collections/books/the-children-of-hurin.json",
+    "forestry/collections/books/beren-and-luthien.json",
     "forestry/collections/books/unfinished-tales-of-nmenor-and-middle-earth.json",
     "forestry/collections/books/the-hobbit.json",
     "forestry/collections/books/the-silmarillion.json"
