@@ -36,6 +36,7 @@ fields:
     maxSize: 64
   label: Cover
 pages:
+- forestry/collections/books/the-children-of-hurin.json
 - forestry/collections/books/the-fall-of-gondolin.json
 - forestry/collections/books/the-fellowship-of-the-ring.json
 - forestry/collections/books/the-hobbit.json
