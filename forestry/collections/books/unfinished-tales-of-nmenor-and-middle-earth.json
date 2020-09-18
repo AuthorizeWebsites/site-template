@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "J.R.R. Tolkien"
+  ],
+  "title": "Unfinished Tales of Nmenor and Middle-earth",
+  "tagline": "They're pretty long for \"unfinished\" tales.",
+  "description": "<p>A New York Times bestseller for twenty-one weeks upon publication, <em>Unfinished Tales</em> is a collection of narratives ranging in time from the Elder Days of Middle-earth to the end of the War of the Ring, and further relates events as told in <em>The Silmarillion </em>and <em>The Lord of the Rings</em>.</p><p>The book concentrates on the lands of Middle-earth and comprises Gandalf's lively account of how he came to send the Dwarves to the celebrated party at Bag-End, the story of the emergence of the sea-god Ulmo before the eyes of Tuor on the coast of Beleriand, and an exact description of the military organization of the Riders of Rohan and the journey of the Black Riders during the hunt for the Ring.</p><p><em>Unfinished Tales</em> also contains the only surviving story about the long ages of Númenor before its downfall, and all that is known about the Five Wizards sent to Middle-earth as emissaries of the Valar, about the Seeing Stones known as the Palantiri, and about the legend of Amroth.</p>",
+  "buyLinks": [
+    {
+      "platform": "Amazon",
+      "customPlatformName": "Your Platform Name",
+      "link": "https://www.amazon.com/gp/product/B00796E7CA"
+    }
+  ],
+  "genres": [
+    {
+      "genreName": "Action & Adventure"
+    },
+    {
+      "genreName": "Fantasy"
+    }
+  ],
+  "cover": "/forestry/unfinished-tales-cover.jpg"
+}
