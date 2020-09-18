@@ -9,7 +9,11 @@
   "tagline": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.",
   "description": "<p><em>The Return of the King</em> is the third and final volume of J. R. R. Tolkien's <em>The Lord of the Rings</em>, following <em>The Fellowship of the Ring</em> and <em>The Two Towers</em>. The story begins in the kingdom of Gondor, which is soon to be attacked by the Dark Lord Sauron.</p><p>Some editions of the volume contain a Synopsis for readers who have not read the earlier volumes. The body of the volume consists of Book V: The War of the Ring, and Book VI: The End of the Third Age. The volume ends with a set of Appendices and Indexes, varying in different editions.</p>",
   "buyLinks": [
-
+    {
+      "platform": "Amazon",
+      "customPlatformName": "Your Platform Name",
+      "link": "https://www.amazon.com/gp/product/B007978P18"
+    }
   ],
   "genres": [
     {
