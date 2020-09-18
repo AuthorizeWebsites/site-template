@@ -3,13 +3,6 @@ label: Book
 hide_body: true
 display_field: title
 fields:
-- name: covers
-  type: image_gallery
-  config: {}
-  label: Cover(s)
-  description: 'Upload as many (or as few) versions as you want. I''ll display the
-    best one for the device being used at any given time. Supported file extensions:
-    png, jpeg, jpg, webp, avif, gif, PNG, JPEG, JPG, WEBP, AVIF, and GIF'
 - name: title
   type: text
   config:
@@ -37,6 +30,11 @@ fields:
   config: {}
   template: genres
   label: Genres
+- name: cover
+  type: file
+  config:
+    maxSize: 64
+  label: Cover
 pages:
 - forestry/collections/books/the-fellowship-of-the-ring.json
 - forestry/collections/books/the-hobbit.json
