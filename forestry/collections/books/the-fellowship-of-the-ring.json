@@ -9,7 +9,11 @@
   "tagline": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkness bind them.",
   "description": "<p><em>The Fellowship of the Ring</em> is the first of three volumes of the epic novel <em>The Lord of the Rings</em> by the English author J. R. R. Tolkien. It is followed by <em>The Two Towers</em> and <em>The Return of the King</em>. It takes place in the fictional universe of Middle-earth. It was originally published on 29 July 1954 in the United Kingdom.</p><p>The volume consists of a foreword, in which the author discusses his writing of <em>The Lord of the Rings</em>, a prologue titled \"Concerning Hobbits, and other matters\", and the main narrative in Book I and Book II.</p>",
   "buyLinks": [
-
+    {
+      "platform": "Amazon",
+      "customPlatformName": "Your Platform Name",
+      "link": "https://www.amazon.com/gp/product/B007978NPG"
+    }
   ],
   "genres": [
     {
