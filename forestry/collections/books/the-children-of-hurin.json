@@ -1,0 +1,24 @@
+{
+  "authors": [
+    "J.R.R. Tolkien"
+  ],
+  "title": "The Children of Húrin",
+  "tagline": "Middle-earth is f*cking huge!",
+  "description": "<p><em>The Children of Húrin</em> is the first complete book by J.R.R.Tolkien since the 1977 publication of <em>The Silmarillion</em>. Six thousand years before the One Ring is destroyed, Middle-earth lies under the shadow of the Dark Lord Morgoth. The greatest warriors among elves and men have perished, and all is in darkness and despair. But a deadly new leader rises, Túrin, son of Húrin, and with his grim band of outlaws begins to turn the tide in the war for Middle-earth—awaiting the day he confronts his destiny and the deadly curse laid upon him.<br><br>The paperback edition of <em>The Children of Húrin</em> includes eight color paintings by Alan Lee and a black-and-white map.</p>",
+  "buyLinks": [
+    {
+      "platform": "Amazon",
+      "customPlatformName": "Your Platform Name",
+      "link": "https://www.amazon.com/gp/product/B007978NKG"
+    }
+  ],
+  "genres": [
+    {
+      "genreName": "Mythology"
+    },
+    {
+      "genreName": "Fantasy"
+    }
+  ],
+  "cover": "/forestry/the-children-of-hurin-cover.jpg"
+}
