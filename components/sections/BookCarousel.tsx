@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import Link from "next/link";
 import { Book } from "@forestry/collections";
@@ -36,7 +35,7 @@ export function BookCarousel({ books, advancedSettings }: BookCarouselProps) {
               style={{ minHeight: "120%" }}
             >
               <img
-                src={book.covers[0]}
+                src={book.cover}
                 className="absolute inset-0 object-top min-w-full min-h-full transform scale-150 opacity-75"
                 style={{
                   filter: "blur(35px)",
@@ -48,7 +47,7 @@ export function BookCarousel({ books, advancedSettings }: BookCarouselProps) {
                 <a className="flex-shrink-0 block transition-all duration-300 ease-in-out transform hover:scale-105 ">
                   <img
                     key={book.title}
-                    src={book.covers[0]}
+                    src={book.cover}
                     className="z-10 w-full h-auto rounded-md shadow-lg sm:w-auto sm:h-96"
                     style={{ width: "auto" }}
                   />

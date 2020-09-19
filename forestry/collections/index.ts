@@ -20,7 +20,7 @@ interface Genre {
 
 interface ForestryBook {
   authors: string[];
-  covers: RelativeURL[];
+  cover: RelativeURL;
   title?: string;
   tagline?: string;
   description?: StringifiedHTML;
@@ -175,6 +175,8 @@ export default (({
     parent: PartiallyLinkedItem;
   }) => (filepath: string): PartiallyLinkedItem => {
     const id = pascalCase(removeExtension(getFilename(filepath)));
+
+    console.log(id, getCollectionsToSearch(key));
 
     for (const collection of getCollectionsToSearch(key)) {
       if (id in collection) {

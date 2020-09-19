@@ -10,7 +10,7 @@ export default function BooksIdPage() {
   if (router?.query?.id === undefined) return null;
 
   const {
-    covers,
+    cover,
     title,
     tagline,
     description,
@@ -22,7 +22,7 @@ export default function BooksIdPage() {
 
   return (
     <div className="flex flex-col space-y-8 sm:space-y-8">
-      <ImageSection imgUrl={covers[0]}>
+      <ImageSection imgUrl={cover}>
         <div className="flex flex-col items-center max-w-3xl pt-8 space-y-4 text-center">
           <h1 className="text-3xl font-semibold leading-tight tracking-wider text-white">
             {title}

@@ -149,34 +149,46 @@ export default function GenresIdPage() {
         .map((series) => (
           <SeriesComp key={series.id} {...series} />
         ))}
-      <div className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        {Object.values(filtered.books)
-          .filter(({ universe }) => {
-            if (universe === undefined) return true;
-            return universe.reduce(
-              (acc, universe) =>
-                acc &&
-                !Object.values(filtered.universes).some(
-                  ({ id }) => id === universe.id
-                ),
-              true
-            );
-          })
-          .filter(({ series }) => {
-            if (series === undefined) return true;
-            return series.reduce(
-              (acc, series) =>
-                acc &&
-                !Object.values(filtered.series).some(
-                  ({ id }) => id === series.id
-                ),
-              true
-            );
-          })
-          .map((props) => (
-            <BookComp key={props.id} {...props} />
-          ))}
+      <div className="p-4 space-y-4 bg-gray-900 rounded-md shadow-xl">
+        <div className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {Object.values(filtered.books)
+            .filter(({ universe }) => {
+              if (universe === undefined) return true;
+              return universe.reduce(
+                (acc, universe) =>
+                  acc &&
+                  !Object.values(filtered.universes).some(
+                    ({ id }) => id === universe.id
+                  ),
+                true
+              );
+            })
+            .filter(({ series }) => {
+              if (series === undefined) return true;
+              return series.reduce(
+                (acc, series) =>
+                  acc &&
+                  !Object.values(filtered.series).some(
+                    ({ id }) => id === series.id
+                  ),
+                true
+              );
+            })
+            .map((props) => (
+              <BookComp key={props.id} {...props} />
+            ))}
+        </div>
       </div>
+      {/* <div className="p-4 space-y-4 bg-gray-800 rounded-md shadow-xl">
+        <p className="inline-flex items-center text-xl font-semibold leading-tight tracking-wider text-white sm:text-2xl">
+          Stand-alone Books
+        </p>
+        <div className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+          {standAloneBooks.map((book) => (
+            <Book key={book.id} {...book} />
+          ))}
+        </div>
+      </div> */}
     </div>
   );
 }

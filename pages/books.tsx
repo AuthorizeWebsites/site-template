@@ -7,7 +7,7 @@ export function Book(props: any) {
       <Link href="/books/[id]" as={`/books/${props.id}`}>
         <a>
           <img
-            src={props.covers[0]}
+            src={props.cover}
             className="w-full h-auto transition-all duration-300 ease-in-out transform rounded-md shadow-lg hover:scale-95"
           />
         </a>

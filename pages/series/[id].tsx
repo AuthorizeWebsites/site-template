@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import collections from "@forestry/collections";
+import { Book } from "@pages/books";
 
 export default function BooksIdPage() {
   const router = useRouter();
@@ -62,21 +63,12 @@ export default function BooksIdPage() {
             </a>
           </Link>
         )}
-        <div className="flex flex-wrap justify-center w-full p-2 bg-gray-800 rounded-md shadow-xl">
-          {books.map((bookProps) => (
-            <div className="p-2">
-              <div className="p-4 overflow-hidden bg-gray-700 rounded-md shadow-inner">
-                <Link href="/books/[id]" as={`/books/${bookProps.id}`}>
-                  <a>
-                    <img
-                      src={bookProps.covers[0]}
-                      className="transition-all duration-300 ease-in-out transform rounded-md shadow-lg h-72 hover:scale-95"
-                    />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          ))}
+        <div className="p-4 space-y-4 bg-gray-800 rounded-md shadow-xl">
+          <div className="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+            {books.map((book) => (
+              <Book key={book.id} {...book} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
