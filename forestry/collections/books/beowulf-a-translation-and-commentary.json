@@ -1,0 +1,22 @@
+{
+  "authors": [
+    "J.R.R. Tolkien"
+  ],
+  "title": "Beowulf: A Translation and Commentary",
+  "tagline": "",
+  "description": "<p>J.R.R. Tolkien completed his translation of <em>Beowulf </em>in 1926: he returned to it later to make hasty corrections, but seems never to have considered its publication. This edition includes an illuminating written commentary on the poem by the translator himself, drawn from a series of lectures he gave at Oxford in the 1930s.<br> <br>His creative attention to detail in these lectures gives rise to a sense of the immediacy and clarity of his vision. It is as if Tolkien entered into the imagined past: standing beside Beowulf and his men shaking out their mail-shirts as they beach their ship on the coast of Denmark, listening to Beowulf’s rising anger at Unferth’s taunting, or looking up in amazement at Grendel’s terrible hand set under the roof of Heorot.<br> <br>“Essential for students of the Old English poem—and the ideal gift for devotees of the One Ring.” —<em>Kirkus</em></p>",
+  "buyLinks": [
+    {
+      "platform": "Amazon",
+      "customPlatformName": "Your Platform Name",
+      "link": "https://www.amazon.com/gp/product/B00J3V9PTO"
+    }
+  ],
+  "genres": [
+    {
+      "genreName": "Mythology"
+    }
+  ],
+  "cover": ""
+}
+<img src="/forestry/beowulf-cover.jpg">

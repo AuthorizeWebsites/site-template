@@ -36,6 +36,7 @@ fields:
     maxSize: 64
   label: Cover
 pages:
+- forestry/collections/books/beowulf-a-translation-and-commentary.json
 - forestry/collections/books/beren-and-luthien.json
 - forestry/collections/books/the-children-of-hurin.json
 - forestry/collections/books/the-fall-of-gondolin.json
